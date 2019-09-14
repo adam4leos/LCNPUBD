@@ -50,8 +50,8 @@ function Home() {
         <MainHeading>Львівський Центр Надання Послуг Учасникам Бойових Дій</MainHeading>
       </HeadingWrapper>
       <Carousel showArrows={true}>
-        {slides.map(slide => (
-          <div>
+        {slides.map((slide, index) => (
+          <div key={index}>
             <img src={slide.img} alt={slide.description} />
           </div>
         ))}

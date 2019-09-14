@@ -6,8 +6,7 @@ export default function facebookLoader() {
         window.fbAsyncInit = function() {
             window.FB.init({
                 appId: "605839246257218",
-                autoLogAppEvents: true,
-                xfbml: true,
+                xfbml: false,
                 version: 'v4.0'
             });
 

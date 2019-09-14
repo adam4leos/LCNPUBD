@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import facebookLoader from "../services/facebookLoader";
+import loaderGif from "../assets/images/loader.gif";
 
 const posts = [
     "https://www.facebook.com/LCNPUBD/posts/2914490368568362",
@@ -14,22 +15,38 @@ const PostsSection = styled.section`
   align-items: center;
 `;
 
+const Post = styled.div`
+  margin-bottom: 50px;
+`;
+
 class Media extends React.Component {
     state = {
-        posts: []
+        loader: true
     };
 
     componentDidMount() {
-        facebookLoader();
+        facebookLoader()
+            .then(FB => {
+                this.setState({
+                    loader: false
+                });
+                FB.XFBML.parse();
+            })
+            .catch(() => {
+                this.setState({
+                    loader: false
+                });
+            });
     };
 
     render() {
         return (
             <main className="main">
                 <PostsSection>
-                {posts.map(post => (
-                    <div key={post} className="fb-post" data-href={post} />
-                ))}
+                    {this.state.loader && <img width="200" src={loaderGif} alt="Завантаження" />}
+                    {posts.map(post => (
+                        <Post key={post} className="fb-post" data-href={post} />
+                    ))}
                 </PostsSection>
             </main>
         );
