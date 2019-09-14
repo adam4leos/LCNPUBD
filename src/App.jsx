@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/Header';
 import FAQ from './components/FAQ';
 import Home from "./components/Home";
+import Media from "./components/Media";
+
 const Contacts = () => 'Contacts';
-const Media = () => 'Media';
 
 const Content = styled.div`
   display: flex;
