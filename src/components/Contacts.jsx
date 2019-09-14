@@ -4,14 +4,9 @@ import styled from 'styled-components';
 import LeafletMap from './LeafletMap';
 
 const Item = styled.li`
-padding: 10px;
-font-size: 20px;
+  padding: 10px;
+  font-size: 20px;
 `;
-
-const Bla = styled(LeafletMap)`
-width: 100%;
-height: 400px;
-`
 
 const Contacts = () => {
   return (
@@ -34,7 +29,7 @@ const Contacts = () => {
           </Item>
         </ul>
 
-        <Bla />
+        <LeafletMap />
       </div>
     </div>
   );

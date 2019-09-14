@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 const HeaderEl = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
   width: 100%;
   background: #2c4890;
 `;

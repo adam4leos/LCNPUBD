@@ -4,8 +4,8 @@ import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 
 export default class LeafletMap extends Component {
   state = {
-    lat: 51.505,
-    lng: -0.09,
+    lat: 49.8372911,
+    lng: 24.0411422,
     zoom: 13,
   }
 
@@ -19,7 +19,7 @@ export default class LeafletMap extends Component {
         />
         <Marker position={position}>
           <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
+          Вулиця Пекарська, 41, Львів, Львівська область, 79000
           </Popup>
         </Marker>
       </Map>
