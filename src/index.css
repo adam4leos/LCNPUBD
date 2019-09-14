@@ -27,6 +27,12 @@ code {
   align-items: center;
 }
 
+#chatbot {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
 .leaflet-container {
   height: 400px;
   width: 100%;

@@ -52,6 +52,10 @@ const LinkEl = styled(Link)`
   &:hover {
     color: #f6f667;
   }
+
+  @media (max-width: 678px) {
+    font-size: 15px;
+  }
 `;
 
 const Header = () => (

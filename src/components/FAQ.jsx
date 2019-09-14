@@ -317,6 +317,7 @@ const FAQ = () => (
                   <a
                     href="https://www8.city-adm.lviv.ua/Pool/Info/doclmr_1.NSF/abd51db1d13348ff422566e6004002dd/975c05e7d46f47cfc22583f6003657be?OpenDocument"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     https://www8.city-adm.lviv.ua/Pool/Info/doclmr_1.NSF/abd51db1d13348ff422566e6004002dd/975c05e7d46f47cfc22583f6003657be?OpenDocument
                   </a>
@@ -351,6 +352,7 @@ const FAQ = () => (
               <a
                 href="https://www8.city-adm.lviv.ua/inteam/uhvaly.nsf/91c21bb29b2b4f47c22571340037f910/be781422add238f0c2257e430026842f?OpenDocument"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 https://www8.city-adm.lviv.ua/inteam/uhvaly.nsf/91c21bb29b2b4f47c22571340037f910/be781422add238f0c2257e430026842f?OpenDocument
               </a>
@@ -363,27 +365,37 @@ const FAQ = () => (
 
           <ul>
             <li>
-              <a href="https://lv.molod-kredit.gov.ua/zhytlovi-prohramy/dostupne-zhytlo" target="_blank">
+              <a
+                href="https://lv.molod-kredit.gov.ua/zhytlovi-prohramy/dostupne-zhytlo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Доступне житло
               </a>
             </li>
             <li>
-              <a href="https://lv.molod-kredit.gov.ua/zhytlovi-prohramy/kredyt-z-statutnoho-kapitalu" target="_blank">
+              <a
+                href="https://lv.molod-kredit.gov.ua/zhytlovi-prohramy/kredyt-z-statutnoho-kapitalu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Кредит зі статутного капіталу
               </a>
             </li>
             <li>
-              <a href="https://lv.molod-kredit.gov.ua/zhytlovi-prohramy/inshi-rehionalni-prohramy" target="_blank">
+              <a
+                href="https://lv.molod-kredit.gov.ua/zhytlovi-prohramy/inshi-rehionalni-prohramy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Регіональні програми
               </a>
             </li>
           </ul>
 
           <p>
-            <p>
-              Львівське регіональне управління державної спеціалізованої фінансової установи "Державний фонд сприяння
-              молодіжному житловому будівництву".
-            </p>
+            Львівське регіональне управління державної спеціалізованої фінансової установи "Державний фонд сприяння
+            молодіжному житловому будівництву". <br />
             м.Львів, вул.Винниченка, 8 <br />
             Пн. – Чт. з 09:00 до 18:00 <br />
             Пт. – з 09:00 до 17:00 <br />
@@ -408,6 +420,7 @@ const FAQ = () => (
               <a
                 href="https://www.dcz.gov.ua/publikaciya/yak-zapochatkuvaty-vlasnyy-biznes-za-spryyannya-derzhavnoyi-sluzhby-zaynyatosti-0"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 https://www.dcz.gov.ua/publikaciya/yak-zapochatkuvaty-vlasnyy-biznes-za-spryyannya-derzhavnoyi-sluzhby-zaynyatosti-0
               </a>
@@ -447,7 +460,7 @@ const FAQ = () => (
                 е-mail: <a href="mailto:lviv_apk@ukr.net;">lviv_apk@ukr.net</a>,{' '}
                 <a href="mailto:apr@loda.gov.ua">apr@loda.gov.ua</a> <br />
                 тел. <a href="tel:0968738860">0968738860</a> <br />
-                <a href="https://loda.gov.ua/agr_prohramy" target="_blank">
+                <a href="https://loda.gov.ua/agr_prohramy" target="_blank" rel="noopener noreferrer">
                   https://loda.gov.ua/agr_prohramy
                 </a>
               </p>
@@ -462,7 +475,11 @@ const FAQ = () => (
             <li>
               передбачено фінансово-кредитну підтримку суб’єктів МСП м. Львова — відшкодування відсотків за кредитами у
               розмірі облікової ставки НБУ (харчова промисловість, легка промисловість та поліграфія). <br />
-              <a href="https://city-adm.lviv.ua/lmr/lmrdownloads/dod_3_napriamy.PDF" target="_blank">
+              <a
+                href="https://city-adm.lviv.ua/lmr/lmrdownloads/dod_3_napriamy.PDF"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 https://city-adm.lviv.ua/lmr/lmrdownloads/dod_3_napriamy.PDF
               </a>{' '}
               <br />
@@ -633,6 +650,7 @@ const FAQ = () => (
                 <a
                   href="https://www8.city-adm.lviv.ua/Pool/Info/doclmr_1.NSF/(SearchForWeb)/29165836806EE1DAC22584580046EB9B?OpenDocument"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   перегляньте посилання
                 </a>

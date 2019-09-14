@@ -12,11 +12,21 @@ const MainHeading = styled.h1`
   font-size: 46px;
   margin: 0;
   width: 80%;
+
+  @media (max-width: 678px) {
+    font-size: 30px;
+  }
 `;
 
 const Logo = styled.img`
   width: 200px;
   margin-right: 40px;
+  align-self: center;
+
+  @media (max-width: 678px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 function Home() {
@@ -44,7 +54,7 @@ function Home() {
   ];
 
   return (
-    <main className="main">
+    <main>
       <HeadingWrapper>
         <Logo src="/logo.jpg" alt="logo" />
         <MainHeading>Львівський Центр Надання Послуг Учасникам Бойових Дій</MainHeading>
@@ -56,7 +66,7 @@ function Home() {
           </div>
         ))}
       </Carousel>
-      <section className="main__about">
+      <section>
         <p>
           Надання послуг учасникам бойових дій учасникам АТО, сім'ям загиблих, військовим частинам та іншим військовим
           формуванням, а також у зв'язку з необхідністю координації дій волонтерів і громадських організацій, які

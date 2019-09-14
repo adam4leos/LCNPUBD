@@ -12,7 +12,7 @@ const Contacts = () => {
   return (
     <div>
       <h2>Контакти</h2>
-  
+
       <div>
         <ul>
           <Item>
@@ -20,7 +20,7 @@ const Contacts = () => {
           </Item>
           <Item>
             Группа Facebook -{' '}
-            <a href="https://www.facebook.com/pg/LCNPUBD" target="_blank">
+            <a href="https://www.facebook.com/pg/LCNPUBD" target="_blank" rel="noopener noreferrer">
               Львівський центр надання послуг учасникам бойових дій
             </a>
           </Item>
@@ -33,6 +33,6 @@ const Contacts = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Contacts;
