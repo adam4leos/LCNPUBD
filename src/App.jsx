@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import FAQ from './components/FAQ';
-import Home from "./components/Home";
-const Contacts = () => 'Contacts';
+import Home from './components/Home';
+import Contacts from './components/Contacts';
 const Media = () => 'Media';
 
 const Content = styled.div`

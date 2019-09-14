@@ -22,7 +22,7 @@ function App() {
 
     return (
         <main className="main">
-            <h2>Львівський Центр Надання Послуг Учасникам Бойових Дій</h2>
+            <h1>Львівський Центр Надання Послуг Учасникам Бойових Дій</h1>
             <Carousel showArrows={true}>
                 {slides.map(slide => (
                     <div>

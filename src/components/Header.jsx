@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HeaderEl = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 100%;
   background: #2c4890;
 `;
@@ -59,16 +59,16 @@ const Header = () => (
   <HeaderEl>
     <Navigation>
       <Item>
-        <LinkEl to="/">Home</LinkEl>
+        <LinkEl to="/">Головна</LinkEl>
       </Item>
       <Item>
-        <LinkEl to="/contacts/">Contacts</LinkEl>
+        <LinkEl to="/contacts/">Контакти</LinkEl>
       </Item>
       <Item>
-        <LinkEl to="/media/">Media</LinkEl>
+        <LinkEl to="/media/">Медіа</LinkEl>
       </Item>
       <Item>
-        <LinkEl to="/faq/">FAQ</LinkEl>
+        <LinkEl to="/faq/">Питання</LinkEl>
       </Item>
     </Navigation>
   </HeaderEl>

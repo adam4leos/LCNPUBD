@@ -12,6 +12,7 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 
 const FAQ = () => (
   <div>
+    <h2>Питання та Відповіді</h2>
     <Accordion allowZeroExpanded={true}>
       <AccordionItem>
         <AccordionItemHeading>
@@ -163,7 +164,7 @@ const FAQ = () => (
           <p>
             Також можна переглянути:
             <a href="https://loda.gov.ua/katalog_dilyanok_dlya_uchasnykiv_ato" target="_blank">
-              Каталог ділянок для учасників АТО{' '}
+               Каталог ділянок для учасників АТО{' '}
             </a>
           </p>
         </AccordionItemPanel>
