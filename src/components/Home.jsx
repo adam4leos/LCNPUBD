@@ -2,22 +2,22 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-function App() {
+function Home() {
     const slides = [{
         img: "/homeSlider/1.jpg",
-        legend: "One"
+        description: "Юридична консультація"
     }, {
         img: "/homeSlider/2.jpg",
-        legend: "One"
+        description: "Лекції, навчання, тренінги"
     }, {
         img: "/homeSlider/3.jpg",
-        legend: "One"
+        description: "Дозвілля"
     }, {
         img: "/homeSlider/4.jpg",
-        legend: "One"
+        description: "Соціальна допомога"
     }, {
         img: "/homeSlider/5.jpg",
-        legend: "One"
+        description: "Психологічна консультація"
     }];
 
     return (
@@ -26,7 +26,7 @@ function App() {
             <Carousel showArrows={true}>
                 {slides.map(slide => (
                     <div>
-                        <img src={slide.img} />
+                        <img src={slide.img} alt={slide.description} />
                     </div>
                 ))}
             </Carousel>
@@ -39,4 +39,4 @@ function App() {
     );
 }
 
-export default App;
+export default Home;

@@ -6,7 +6,7 @@ import Header from './components/Header';
 import FAQ from './components/FAQ';
 import Home from './components/Home';
 import Contacts from './components/Contacts';
-const Media = () => 'Media';
+import Media from "./components/Media";
 
 const Content = styled.div`
   display: flex;
