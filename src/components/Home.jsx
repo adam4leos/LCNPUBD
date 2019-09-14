@@ -24,8 +24,8 @@ function Home() {
         <main className="main">
             <h1>Львівський Центр Надання Послуг Учасникам Бойових Дій</h1>
             <Carousel showArrows={true}>
-                {slides.map(slide => (
-                    <div>
+                {slides.map((slide, index) => (
+                    <div key={index}>
                         <img src={slide.img} alt={slide.description} />
                     </div>
                 ))}
