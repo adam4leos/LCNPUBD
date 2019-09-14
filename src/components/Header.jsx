@@ -6,12 +6,15 @@ const HeaderEl = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  width: 100%;
+  background: #2c4890;
 `;
 
 const Navigation = styled.ul`
   display: flex;
   justify-content: space-around;
   width: 100%;
+  max-width: 868px;
   list-style: none;
   background: #2c4890;
   margin: 0;
