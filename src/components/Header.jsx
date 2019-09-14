@@ -43,14 +43,14 @@ const LinkEl = styled(Link)`
   box-sizing: border-box;
   text-transform: uppercase;
   font-weight: bold;
-  transition: opacity 300ms;
+  transition: color 300ms;
 
   &:visited {
     color: #fff;
   }
 
   &:hover {
-    opacity: .8;
+    color: #f6f667;
   }
 `;
 

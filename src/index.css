@@ -31,3 +31,21 @@ code {
   height: 400px;
   width: 100%;
 }
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+  margin-bottom: 10px;
+}
+
+ol ol > li {
+  display: block;
+}
+
+ol ol > li:before {
+  content: counters(item, ".") ". ";
+  margin-left: -20px;
+}
