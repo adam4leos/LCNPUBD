@@ -1,41 +1,38 @@
 import React from 'react';
-import styled from 'styled-components';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-const AppEl = styled.div`
-  text-align: center;
-`;
-
-const Header = styled.header`
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-`;
+const Home = () => 'Home';
+const Contacts = () => 'Contacts';
+const Media = () => 'Media';
+const FAQ = () => 'FAQ';
 
 function App() {
   return (
-    <AppEl>
-      <Header>
-        <ul>
-          <li>
-            Main
-          </li>
-          <li>
-            Media
-          </li>
-          <li>
-            Contacts
-          </li>
-          <li>
-            FAQ
-          </li>
-        </ul>
-      </Header>
-    </AppEl>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/contacts/">Contacts</Link>
+            </li>
+            <li>
+              <Link to="/media/">Media</Link>
+            </li>
+            <li>
+              <Link to="/faq/">FAQ</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Route path="/" exact component={Home} />
+        <Route path="/contacts/" component={Contacts} />
+        <Route path="/media/" component={Media} />
+        <Route path="/faq/" component={FAQ} />
+      </div>
+    </Router>
   );
 }
 
