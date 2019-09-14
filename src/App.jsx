@@ -1,40 +1,33 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import styled from 'styled-components';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import Header from './components/Header';
 import FAQ from './components/FAQ';
 
 const Home = () => 'Home';
 const Contacts = () => 'Contacts';
 const Media = () => 'Media';
 
-function App() {
-  return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/contacts/">Contacts</Link>
-            </li>
-            <li>
-              <Link to="/media/">Media</Link>
-            </li>
-            <li>
-              <Link to="/faq/">FAQ</Link>
-            </li>
-          </ul>
-        </nav>
+const Content = styled.div`
+  display: flex;
+  max-width: 868px;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+`;
 
-        <Route path="/" exact component={Home} />
-        <Route path="/contacts/" component={Contacts} />
-        <Route path="/media/" component={Media} />
-        <Route path="/faq/" component={FAQ} />
-      </div>
-    </Router>
-  );
-}
+const App = () => (
+  <Router>
+    <Content>
+      <Header/>
+
+      <Route path="/" exact component={Home} />
+      <Route path="/contacts/" component={Contacts} />
+      <Route path="/media/" component={Media} />
+      <Route path="/faq/" component={FAQ} />
+    </Content>
+  </Router>
+);
 
 export default App;
