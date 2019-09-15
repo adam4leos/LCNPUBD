@@ -13,6 +13,7 @@ export default function facebookLoader() {
       resolve(window.FB);
     };
 
+    //
     (function(d, s, id) {
       var js,
         fjs = d.getElementsByTagName(s)[0];
